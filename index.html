@@ -20,23 +20,35 @@
         <label>Nice Comment</label>
         <input id="niceComment" type="text" />
     </p>
-
     <p>
         <label>Missing Assignments (separate with commas)</label>
         <input id="missingAssignments" type="text" />
+    </p>
+    <p>
+        <label>Math Class</label>
+        <input id="mathClass" type="text" />
     </p>
     <button onclick="generate()">Generate Email</button>
 
     <script>
         function generate() {
-            var student = document.getElementById("student").value
+            var student = document.getElementById("student").value;
             var comment = document.getElementById("niceComment").value;
+            var mathClass = document.getElementById("mathClass").value;
             var missingAssignments = document.getElementById("missingAssignments").value;
 
-            document.getElementById("output").innerHTML = "Hi<br>";
+
+
+            document.getElementById("output").innerHTML = mathClass + " Check in with " + student + "<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "<br>";
+
+            document.getElementById("output").innerHTML += "Hi<br>";
             document.getElementById("output").innerHTML += "<br>";
             document.getElementById("output").innerHTML += "My name is Mary, I am " + student + "\'s math teacher. <br>";
-            document.getElementById("output").innerHTML += "I have enjoyed having " + student + " in my class this trimester.<br>"
+            document.getElementById("output").innerHTML += "I have enjoyed having " + student + " in " + mathClass + " this trimester.<br>"
             document.getElementById("output").innerHTML += comment + "<br>";
             document.getElementById("output").innerHTML += "<br>";
             document.getElementById("output").innerHTML += "We are currently four weeks away from the end of the trimester.<br>";
