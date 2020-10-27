@@ -4,7 +4,6 @@
     <title>
         Email Generator
     </title>
-    <script src="generator.js"></script>
 </head>
 
 <body>
@@ -12,25 +11,45 @@
         Email Generator
     </h1>
 
-    <form id="emailForm" action="">
-        <fieldset>
-            <p id="name">
-                <label for="name">Student Name</label>
-                <input id="name" name="name" type="text" />
+    <p>
+        <label>Student Name</label>
+        <input id="student" type="text" />
 
-            </p>
-            <p id="niceComment">
-                <label for="niceComment">Nice Comment</label>
-                <input id="niceComment" name="niceComment" type="text" />
-            </p>
+    </p>
+    <p>
+        <label>Nice Comment</label>
+        <input id="niceComment" type="text" />
+    </p>
 
-            <p id="missingAssignments">
-                <label for="missingAssignments">Missing Assignments (separate with commas)</label>
-                <input id="missingAssignments name=" missingAssignments type="text" />
-            </p>
-            <input onCLick="generate()" type="button" id="generate" value="Generate Email" />
-        </fieldset>
-    </form>
+    <p>
+        <label>Missing Assignments (separate with commas)</label>
+        <input id="missingAssignments" type="text" />
+    </p>
+    <button onclick="generate()">Generate Email</button>
+
+    <script>
+        function generate() {
+            var student = document.getElementById("student").value
+            var comment = document.getElementById("niceComment").value;
+            var missingAssignments = document.getElementById("missingAssignments").value;
+
+            document.getElementById("output").innerHTML = "Hi<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "My name is Sam, I am " + student + "\'s math teacher. <br>";
+            document.getElementById("output").innerHTML += "I have enjoyed having " + student + " in my class.<br>"
+            document.getElementById("output").innerHTML += comment + "<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "We are current four weeks away from the end of the trimester.<br>";
+            document.getElementById("output").innerHTML += student + "is currently missing the following assignments: " + missingAssignments + "<br>";
+            document.getElementById("output").innerHTML += "My grading policy allows " + student + " to earn full points back on assignments and half points back on tests.<br>";
+            document.getElementById("output").innerHTML += "I have enjoyed having " + student + " in my class this trimester.<br>";
+            document.getElementById("output").innerHTML += "My number is 1234567890, feel free to reach out with any questions.<br>";
+            document.getElementById("output").innerHTML += "<br>";
+            document.getElementById("output").innerHTML += "Sam";
+        }
+    </script>
+
+    <p id="output"></p>
 </body>
 
 </html>
