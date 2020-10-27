@@ -2,57 +2,33 @@
 
 <head>
     <title>
-        Validation Form
+        Email Generator
     </title>
-    <script src="validation1.js"></script>
+    <script src="generator.js"></script>
 </head>
 
 <body>
     <h1>
-        Validation Form
+        Email Generator
     </h1>
 
-    <form id="validationForm" action="">
+    <form id="emailForm" action="">
         <fieldset>
-            <p id="firstName">
-                <label for="firstName">First Name</label>
-                <input id="firstName" name="firstName" type="text" />
+            <p id="name">
+                <label for="name">Student Name</label>
+                <input id="name" name="name" type="text" />
 
             </p>
-            <p id="lastName">
-                <label for="lastName">Last Name</label>
-                <input id="lastName" name="lastName" type="text" />
-
+            <p id="niceComment">
+                <label for="niceComment">Nice Comment</label>
+                <input id="niceComment" name="niceComment" type="text" />
             </p>
 
-            <p id="gender">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender">
-                    <option>Select Your Gender:</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
+            <p id="missingAssignments">
+                <label for="missingAssignments">Missing Assignments (separate with commas)</label>
+                <input id="missingAssignments name=" missingAssignments type="text" />
             </p>
-
-            <p id="state">
-                <label for="state">State</label>
-                <select id="state" name="state">
-                    <option>Select Your State:</option>
-                    <option>California</option>
-                    <option>Florida</option>
-                    <option>New York</option>
-                    <option>Texas</option>
-                    <option>Hawaii</option>
-                    <option>Washington</option>
-                    <option>Colorado</option>
-                    <option>Virginia</option>
-                    <option>Iowa</option>
-                    <option>Arizona</option>
-                </select>
-            </p>
-
-            <input onCLick="validate()" type="button" id="continue" value="Continue" />
+            <input onCLick="generate()" type="button" id="generate" value="Generate Email" />
         </fieldset>
     </form>
 </body>
