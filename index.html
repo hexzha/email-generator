@@ -17,8 +17,8 @@
 
     </p>
     <p>
-        <label>Nice Comment</label>
-        <input id="niceComment" type="text" />
+        <label>Nice niceComment</label>
+        <input id="niceniceComment" type="text" />
     </p>
     <p>
         <label>Missing Assignments (separate with commas)</label>
@@ -33,7 +33,7 @@
     <script>
         function generate() {
             var student = document.getElementById("student").value;
-            var comment = document.getElementById("niceComment").value;
+            var niceComment = document.getElementById("niceniceComment").value;
             var mathClass = document.getElementById("mathClass").value;
             var missingAssignments = document.getElementById("missingAssignments").value;
 
@@ -45,7 +45,7 @@
             document.getElementById("output").innerHTML += "<br>";
             document.getElementById("output").innerHTML += "Hi<br>";
             document.getElementById("output").innerHTML += "<br>";
-            document.getElementById("output").innerHTML += "I wanted to give you an update for " + student + " in " + mathClass + " with four weeks left in the trimester. " + comment + "<br>";
+            document.getElementById("output").innerHTML += "I wanted to give you an update for " + student + " in " + mathClass + " with four weeks left in the trimester. " + niceComment + "<br>";
             document.getElementById("output").innerHTML += "<br>";
             document.getElementById("output").innerHTML += "We are currently four weeks away from the end of the trimester. " + student + " is currently missing the following assignments: " + missingAssignments + "<br>";
             document.getElementById("output").innerHTML += "<br>";
