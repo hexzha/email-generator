@@ -1,1 +1,1 @@
-# email-generator
+# email generator
