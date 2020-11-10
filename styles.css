@@ -1,4 +1,11 @@
-ul.info {
+ul {
     list-style-type: none;
-    padding: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+input {
+    float: left;
+    vertical-align: baseline;
 }
