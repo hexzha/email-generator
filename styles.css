@@ -12,3 +12,7 @@ label {
     float: left;
     width: 15%;
 }
+
+.container {
+    border-radius: 5px;
+}
