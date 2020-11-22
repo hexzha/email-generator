@@ -13,7 +13,13 @@ label {
     width: 15%;
 }
 
-.container {
+.containerTop {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height: 25%;
+}
+
+.containerBot {
     border-radius: 5px;
     background-color: #f2f2f2;
     height: 60%;
@@ -22,7 +28,7 @@ label {
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
-    border: none;
+    padding: 15px 20px;
+    border: 5%;
     border-radius: 5px;
 }
