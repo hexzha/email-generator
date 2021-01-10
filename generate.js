@@ -1,3 +1,5 @@
+var break = "<br>";
+
 function generate() {
     var student = document.getElementById("student").value;
     var niceComment = document.getElementById("niceComment").value;
