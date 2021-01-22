@@ -9,7 +9,7 @@ function generate() {
     var niceComment = document.getElementById("niceComment").value;
     var mathClass = document.getElementById("mathClass").value;
     var missingAssignments = document.getElementById("missingAssignments").value;
-
+ 
     document.getElementById("output").innerHTML = printLine(mathClass + " Check In with " + student);
     document.getElementById("output").innerHTML += printLine("");
     document.getElementById("output").innerHTML += printLine("");
