@@ -1,6 +1,6 @@
-var br = "<br>";
-
 function printLine(line) {
+    var br = "<br>"; 
+
     return line + br;
 }
 
